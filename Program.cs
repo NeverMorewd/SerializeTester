@@ -8,9 +8,9 @@ namespace SerializeTester
         {
             Console.WriteLine("here we go!");
             //test with benchmark
-            BenchmarkRunner.Run<BenchmarkTest>();
+            //BenchmarkRunner.Run<BenchmarkTest>();
             //test once only
-            //BenchmarkTest.TestOnce();
+            BenchmarkTest.TestOnce();
         }
     }
 }
