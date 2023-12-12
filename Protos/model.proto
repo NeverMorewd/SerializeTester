@@ -1,0 +1,30 @@
+﻿syntax = "proto3";
+package serializetest.proto.model;
+
+
+message ListMember 
+{
+  repeated Member values = 1;
+}
+
+message ListString 
+{
+  repeated string values = 1;
+}
+
+message Organization
+{
+	int32 id = 1;
+	repeated string tags = 2;
+	repeated Member members = 3;
+}
+
+message Member
+{
+	int32 Id =1;
+    string Name =2;
+    string Description = 3;
+    string Address = 4;
+    double Value = 5;
+    int64 UpdateTime = 6;
+}
