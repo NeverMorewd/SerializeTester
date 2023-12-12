@@ -47,7 +47,7 @@ namespace SerializeTester
         [Benchmark]
         public void ProtoBufPackSerialize()
         {
-            RunSerialize(new ProtoBufSerializeHelper());
+            RunSerialize(new ProtoNetBufSerializeHelper());
         }
 
         [Benchmark]
@@ -68,7 +68,7 @@ namespace SerializeTester
                 new JsonByteSerializeHelper(),
                 new CustomSerializeHelper(),
                 new BinarySerializeHelper(),
-                new ProtoBufSerializeHelper(),
+                new ProtoNetBufSerializeHelper(),
                 new MessagePackSerializeHelper(),
             };
             Console.WriteLine("cold run");

@@ -5,7 +5,7 @@ namespace SerializeTester.SerializeHelpers
     /// <summary>
     /// Protobuf-net
     /// </summary>
-    public class ProtoBufSerializeHelper:ISerializeHelper
+    public class ProtoNetBufSerializeHelper:ISerializeHelper
     {
         public byte[] Serialize(Organization data)
         {
